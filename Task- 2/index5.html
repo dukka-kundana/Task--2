@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Maker</h1>
+        <form id="resume-form">
+            <section>
+                <h2>Personal Information</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="contact">Contact Information:</label>
+                <input type="text" id="contact" name="contact" required>
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin">
+                <label for="website">Website/Portfolio:</label>
+                <input type="url" id="website" name="website">
+            </section>
+            <section>
+                <h2>Professional Summary</h2>
+                <textarea id="summary" name="summary" required></textarea>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <input type="text" id="skills" name="skills" placeholder="Comma separated list" required>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <textarea id="education" name="education" required></textarea>
+            </section>
+            <section>
+                <h2>Experience</h2>
+                <textarea id="experience" name="experience" required></textarea>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <textarea id="projects" name="projects" required></textarea>
+            </section>
+            <section>
+                <h2>Certifications</h2>
+                <textarea id="certifications" name="certifications" required></textarea>
+            </section>
+            <section>
+                <h2>Languages</h2>
+                <textarea id="languages" name="languages" required></textarea>
+            </section>
+            <section>
+                <h2>References</h2>
+                <textarea id="references" name="references" required></textarea>
+            </section>
+            <section>
+                <h2>Template Choice</h2>
+                <select id="template" name="template" required>
+                    <option value="template1">Template 1</option>
+                    <option value="template2">Template 2</option>
+                </select>
+            </section>
+            <section>
+                <h2>Format Choice</h2>
+                <select id="format" name="format" required>
+                    <option value="pdf">PDF</option>
+                    <option value="docx">Docx</option>
+                    <option value="txt">Txt</option>
+                </select>
+            </section>
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resume-preview"></div>
+    </div>
+    <script src="script5.js"></script>
+</body>
+</html>
